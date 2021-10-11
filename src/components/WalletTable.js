@@ -20,7 +20,7 @@ class WalletTable extends React.Component {
             <td>{ item.description }</td>
             <td>{ item.tag }</td>
             <td>{ item.method }</td>
-            <td>{ (+item.value).toFixed(2) }</td>
+            <td>{ (+item.value) }</td>
             <td>{ item.exchangeRates[item.currency].name.split('/')[0] }</td>
             <td>{ (+item.exchangeRates[item.currency].ask).toFixed(2) }</td>
             <td>{ (item.exchangeRates[item.currency].ask * item.value).toFixed(2) }</td>
