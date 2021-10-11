@@ -29,7 +29,6 @@ const walletReducer = (state = initialState, action) => {
   case REC_EXCHANGE_R:
     return {
       ...state,
-
       loadingExchange: false,
     };
   case ERR_EXCHANGE_R:
