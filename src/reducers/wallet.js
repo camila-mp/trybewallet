@@ -3,6 +3,7 @@ import {
   REQ_EXCHANGE_R,
   REC_EXCHANGE_R,
   ERR_EXCHANGE_R,
+  EXCLUDE_EXPENSE,
 } from '../actions/index';
 
 const initialState = {
@@ -13,6 +14,11 @@ const initialState = {
 
 const walletReducer = (state = initialState, action) => {
   switch (action.type) {
+  case EXCLUDE_EXPENSE:
+    return {
+      ...state,
+      expenses: state.expenses.filter((item) => item.id !== action.id),
+    };
   case WALLET_USER_EXPENSE:
     return {
       ...state,

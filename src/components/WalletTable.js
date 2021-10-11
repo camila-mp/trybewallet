@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import propTypes from 'prop-types';
+import { excludeExpense } from '../actions';
 // link consultado para aprender a fazer a tabela: https://dev.to/abdulbasit313/an-easy-way-to-create-a-customize-dynamic-table-in-react-js-3igg
 
 class WalletTable extends React.Component {
@@ -12,7 +13,7 @@ class WalletTable extends React.Component {
   }
 
   renderTableInfo() {
-    const { expenses } = this.props;
+    const { expenses, exclude } = this.props;
     if (expenses.length > 0) {
       return (
         expenses.map((item) => (
@@ -30,6 +31,7 @@ class WalletTable extends React.Component {
                 type="button"
                 data-testid="delete-btn"
                 className="delete-button"
+                onClick={ () => exclude(item.id) }
               >
                 Excluir
               </button>
@@ -56,8 +58,13 @@ const mapStateToProps = ({ wallet }) => ({
   expenses: wallet.expenses,
 });
 
-export default connect(mapStateToProps, null)(WalletTable);
+const mapDispatchToProps = (dispatch) => ({
+  exclude: (id) => dispatch(excludeExpense(id)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(WalletTable);
 
 WalletTable.propTypes = {
   expenses: propTypes.arrayOf(propTypes.object).isRequired,
+  exclude: propTypes.func.isRequired,
 };

@@ -88,7 +88,6 @@ class Wallet extends React.Component {
       return convertedValue + acc;
     }, 0);
     this.setState({ totalValue });
-    console.log(expensesInfo);
   }
 
   render() {
