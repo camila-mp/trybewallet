@@ -36,8 +36,24 @@ header {
 }
 
 .expense-button {
+  background-color: #8a5eff;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
   height: 40px;
+  margin: 10px;
   width: 140px;
+}
+
+.delete-button {
+  background-color: #8a5eff;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  height: 40px;
+  margin: 3px;
+  padding: 2px;
+  width: 80px;
 }
 
 .wallet-form {

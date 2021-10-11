@@ -25,7 +25,16 @@ class WalletTable extends React.Component {
             <td>{ (+item.exchangeRates[item.currency].ask).toFixed(2) }</td>
             <td>{ (item.exchangeRates[item.currency].ask * item.value).toFixed(2) }</td>
             <td>Real</td>
-            <td>editar/excluir</td>
+            <td>
+              <button
+                type="button"
+                data-testid="delete-btn"
+                className="delete-button"
+              >
+                Excluir
+              </button>
+
+            </td>
           </tr>))
       );
     }
