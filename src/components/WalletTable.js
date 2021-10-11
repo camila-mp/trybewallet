@@ -5,6 +5,18 @@ import { excludeExpense } from '../actions';
 // link consultado para aprender a fazer a tabela: https://dev.to/abdulbasit313/an-easy-way-to-create-a-customize-dynamic-table-in-react-js-3igg
 
 class WalletTable extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  async handleClick(id) {
+    const { exclude, calculateExpenses } = this.props;
+    await exclude(id);
+    calculateExpenses();
+  }
+
   renderTableHeader() {
     const header = [
       'Descrição', 'Tag', 'Método de pagamento', 'Valor', 'Moeda', 'Câmbio utilizado',
@@ -13,7 +25,7 @@ class WalletTable extends React.Component {
   }
 
   renderTableInfo() {
-    const { expenses, exclude } = this.props;
+    const { expenses } = this.props;
     if (expenses.length > 0) {
       return (
         expenses.map((item) => (
@@ -31,7 +43,7 @@ class WalletTable extends React.Component {
                 type="button"
                 data-testid="delete-btn"
                 className="delete-button"
-                onClick={ () => exclude(item.id) }
+                onClick={ () => this.handleClick(item.id) }
               >
                 Excluir
               </button>
@@ -65,6 +77,7 @@ const mapDispatchToProps = (dispatch) => ({
 export default connect(mapStateToProps, mapDispatchToProps)(WalletTable);
 
 WalletTable.propTypes = {
+  calculateExpenses: propTypes.func.isRequired,
   expenses: propTypes.arrayOf(propTypes.object).isRequired,
   exclude: propTypes.func.isRequired,
 };

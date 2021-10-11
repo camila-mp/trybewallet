@@ -112,7 +112,7 @@ class Wallet extends React.Component {
             Adicionar despesa
           </button>
         </form>
-        <WalletTable />
+        <WalletTable calculateExpenses={ this.calculateExpenses } />
       </div>
     );
   }
