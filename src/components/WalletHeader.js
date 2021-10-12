@@ -16,7 +16,7 @@ class WalletHeader extends React.Component {
           Despesa total: R$&nbsp;
           <span data-testid="total-field">{totalValue.toFixed(2)}</span>
         </h3>
-        <h3 data-testid="header-currency-field">BRL</h3>
+        <h3 data-testid="header-currency-field">Moeda: BRL</h3>
       </header>
     );
   }
