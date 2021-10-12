@@ -20,7 +20,7 @@ class WalletTable extends React.Component {
   renderTableHeader() {
     const header = [
       'Descrição', 'Tag', 'Método de pagamento', 'Valor', 'Moeda', 'Câmbio utilizado',
-      'Valor convertido', 'Moeda de conversão', 'Editar/Excluir'];
+      'Valor convertido', 'Moeda de conversão', 'Excluir'];
     return header.map((columnName) => <th key={ columnName }>{ columnName }</th>);
   }
 
