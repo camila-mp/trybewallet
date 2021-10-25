@@ -89,7 +89,7 @@ class Login extends React.Component {
               onChange={ this.handleChange }
             />
           </label>
-          <Link to="/carteira">
+          <Link to="/trybewallet/carteira">
             <button
               className="login-button"
               type="submit"
