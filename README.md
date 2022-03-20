@@ -15,7 +15,7 @@ A aplicação simula uma carteira de controle de gastos com conversor de moedas.
 
 # Tecnologias utilizadas
 
-`HTML`, `CSS`, `JavaScript`, `React` e `Redux`.
+`HTML`, `CSS`, `JavaScript`, `React`, `React router` e `Redux`.
 
 # Como rodar o projeto na sua máquina
 
