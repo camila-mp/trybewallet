@@ -7,7 +7,7 @@ Visualize e teste a aplicação clicando <a href="https://camila-mp.github.io/tr
 # Sobre
 
 Projeto desenvolvido individualmente durante o curso da Trybe, no módulo  Front-End. Ideia geral de funcionalidades vieram da Trybe, enquanto eu desenvolvi todo o código (React, JSX, HTML e CSS).
-A aplicação simula uma carteira de controle de gastos com conversor de moedas. A conversão é sempre atualizada com consumo de dados da API <a href="https://docs.awesomeapi.com.br/api-de-moedas"> *awesomeAPI - Cotações de Moedas*</a>. Ao utilizar essa aplicação, o usuário pode:
+A aplicação simula uma carteira de controle de gastos com conversor de moedas. A conversão é atualizada com consumo de dados da API <a href="https://docs.awesomeapi.com.br/api-de-moedas"> *awesomeAPI - Cotações de Moedas*</a>. Ao utilizar essa aplicação, o usuário pode:
 
 - Adicionar ou remover despesas em diversas moedas;
 - Visualizar uma tabelas com seus gastos;
