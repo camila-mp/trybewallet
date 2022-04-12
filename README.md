@@ -6,8 +6,8 @@ Visualize e teste a aplicação clicando <a href="https://camila-mp.github.io/tr
 
 # Sobre
 
-Projeto desenvolvido individualmente durante o curso da Trybe, no módulo  Front-End (3,5 meses de curso). Ideia da organização das páginas, funcionalidades e testes vieram da Trybe, enquanto eu desenvolvi todo o código (React, JSX, html e css).
-A aplicação simula uma carteira de controle de gastos com conversor de moedas. A conversão é sempre atualizada pois é feita com consumo de dados da API <a href="https://docs.awesomeapi.com.br/api-de-moedas"> *awesomeAPI - Cotações de Moedas*</a>. Ao utilizar essa aplicação o usuário pode:
+Projeto desenvolvido individualmente durante o curso da Trybe, no módulo  Front-End. Ideia geral de funcionalidades vieram da Trybe, enquanto eu desenvolvi todo o código (React, JSX, HTML e CSS).
+A aplicação simula uma carteira de controle de gastos com conversor de moedas. A conversão é atualizada com consumo de dados da API <a href="https://docs.awesomeapi.com.br/api-de-moedas"> *awesomeAPI - Cotações de Moedas*</a>. Ao utilizar essa aplicação, o usuário pode:
 
 - Adicionar ou remover despesas em diversas moedas;
 - Visualizar uma tabelas com seus gastos;
@@ -15,7 +15,7 @@ A aplicação simula uma carteira de controle de gastos com conversor de moedas.
 
 # Tecnologias utilizadas
 
-`HTML`, `CSS`, `JavaScript`, `React` e `Redux`.
+`HTML`, `CSS`, `JavaScript`, `React`, `React router` e `Redux`.
 
 # Como rodar o projeto na sua máquina
 
@@ -30,5 +30,5 @@ Abra o seu Visual Studio code e siga as instruções a seguir.
 3. Instale as dependências com:
 `npm install` ou `yarn`
 
-4. Inicialize a aplicação com no servidor local:
+4. Inicialize a aplicação no servidor local:
 `npm start` ou `yarn run start`
