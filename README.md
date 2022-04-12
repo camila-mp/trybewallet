@@ -28,7 +28,7 @@ Abra o seu Visual Studio code e siga as instruções a seguir.
 `cd webwallet`
 
 3. Instale as dependências com:
-`npm install` ou `yarn`
+`npm install` ou `yarn install`
 
 4. Inicialize a aplicação no servidor local:
 `npm start` ou `yarn run start`
