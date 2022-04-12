@@ -1,6 +1,6 @@
-# Boas vindas ao repositório do projeto TrybeWallet!
+# Boas vindas ao repositório do projeto WebWallet!
 
-Visualize e teste a aplicação clicando <a href="https://camila-mp.github.io/trybewallet">aqui</a>.
+Visualize e teste a aplicação clicando <a href="https://camila-mp.github.io/webwallet">aqui</a>.
 
 <img src="./src/print-webwallet.png">
 
