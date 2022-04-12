@@ -2,7 +2,7 @@
 
 Visualize e teste a aplicação clicando <a href="https://camila-mp.github.io/trybewallet">aqui</a>.
 
-<img src="print-trybewallet.png">
+<img src="./src/print-webwallet.png">
 
 # Sobre
 
@@ -22,10 +22,10 @@ A aplicação simula uma carteira de controle de gastos com conversor de moedas.
 Abra o seu Visual Studio code e siga as instruções a seguir.
 
 1. Clone o repositório com o comando:
-`git@github.com:camila-mp/trybewallet.git`
+`git@github.com:camila-mp/webwallet.git`
 
 2. Entre na pasta clonada:
-`cd trybewallet`
+`cd webwallet`
 
 3. Instale as dependências com:
 `npm install` ou `yarn`
