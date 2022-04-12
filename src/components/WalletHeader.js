@@ -7,7 +7,7 @@ class WalletHeader extends React.Component {
     const { userEmail, totalValue } = this.props;
     return (
       <header>
-        <h1>TrybeWallet</h1>
+        <h1>WebWallet</h1>
         <h3 data-testid="email-field">
           Email:&nbsp;
           {userEmail}
